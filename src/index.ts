@@ -10,8 +10,8 @@ dotenv.config();
     const client = createClient();
 
     client.on('ready', () => {
-        console.log(`Logged in as ${client.user.tag}!`);
-        client.user.setActivity('Supporter Pack Raffle')
+        console.info(`Logged in as ${client.user.tag}!`);
+        client.user.setActivity('Supporter Pack Raffle');
     });
 
     client.on('messageCreate', async (message) => {

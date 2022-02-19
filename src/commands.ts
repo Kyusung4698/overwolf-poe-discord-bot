@@ -87,8 +87,6 @@ export const COMMANDS: Command[] = [
                 const set = new Set(likers.map(x => x.id));
                 const intersection = retweeters.filter(x => set.has(x.id))
 
-                console.log(JSON.stringify(retweeters));
-
                 const result = stringify([
                     ['id', 'username', 'name', 'profileImageUrl'],
                     ...intersection.map(x => [x.id, x.username, x.name, x.profile_image_url])
