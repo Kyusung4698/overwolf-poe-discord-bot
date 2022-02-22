@@ -11,7 +11,7 @@ dotenv.config();
 
     client.on('ready', () => {
         console.info(`Logged in as ${client.user.tag}!`);
-        client.user.setActivity('Supporter Pack Raffle');
+        client.user.setActivity('Supporter Pack Raffle²');
     });
 
     client.on('messageCreate', async (message) => {
